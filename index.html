@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- 
+    HTML meta tags. Metadata describes data not shown in the HTML document.
+    Instead meta tags are used by the browser to understand the content of the document.
+    
+    charset attribute specifies the character set for the document.
+
+    Example: WITHOUT charset attribute
+
+    <html lang="en">
+        <head>
+            <title>Encoding Test</title>
+        </head>
+        <body>
+            <p>Olá, cómo estás? 你好, 世界!</p>
+        </body>
+    </html>
+
+    The browser does not know how to recognize these foreign characters. 
+    It shows gibberish like this on the browser OlÃ¡, cÃ³mo estÃ¡s? ä½ å¥½, ä¸å£
+
+    Example: WITH charset attribute
+
+    <html lang="en">
+        <head>
+            <title>Encoding Test</title>
+            <meta charset="UTF-8" />
+        </head>
+        <body>
+            <p>Olá, cómo estás? 你好, 世界!</p>
+        </body>
+    </html>
+
+    The browser will now correctly display the foreign characters.  Olá, cómo estás? 你好, 世界!
+    -->
     <meta charset="UTF-8" />
+
+    <!-- 
+    Viewport Tag: This tag controls the layout of the document on different devices, especially mobile devices. 
+    It helps ensure that the webpage is responsive and looks good on various screen sizes.
+    -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    Title Tag: This tag sets the title of the document.
+    This sets the title of the document, which appears in the browser tab.
+    -->
     <title>Hello World</title>
+
+    <!-- 
+    Link Tag: This tag is used to link external resources.
+    rel attribute specifies the relationship between the current document and the linked resource.
+    href attribute specifies the URL of the linked resource.
+    This links the external CSS file to the HTML document.
+    -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- 
+    Script Tag: This tag is used to link external scripts.
+    defer attribute ensures that the script is executed after the HTML document has been fully loaded.
+    src attribute specifies the URL of the script file.
+    -->
     <script defer src="script.js"></script>
   </head>
   <body>
