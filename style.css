@@ -1,0 +1,32 @@
+body {
+  display: flex; /* Flexbox container */
+  flex-direction: column; /* Means vertical stack elements */
+  align-items: center; /* Align items horizontally */
+  justify-content: center; /* Align items vertically */
+  height: 100vh; /* Full height of page */
+  font-family: sans-serif; /* Font of text */
+}
+
+h1 {
+  font-size: 2rem; /* Font size. rem means root element which is 16px. so 2 * 16 = 32px */
+  margin-bottom: 1rem; /* Bottom margin. 1rem = 16px */
+}
+
+h2 {
+  font-size: 3rem; /* Font size. rem means root element which is 16px. so 3 * 16 = 48px */
+  margin-bottom: 1rem; /* Bottom margin. 1rem = 16px */
+}
+
+button {
+  padding: 0.5rem 1rem; /* Padding. 0.5rem = 8px, 1rem = 16px. 0.5rem top and bottom, 1rem left and right */
+  font-size: 1.2rem; /* Font size */
+  cursor: pointer; /* Cursor. pointer become cursor when mouse is over button */
+  border: none; /* Remove border */
+  background-color: #007bff; /* Background color */
+  color: white; /* Text color */
+  border-radius: 5px; /* Border radius */
+}
+
+button:hover {
+  background-color: #0056b3; /* Background color on hover */
+}
